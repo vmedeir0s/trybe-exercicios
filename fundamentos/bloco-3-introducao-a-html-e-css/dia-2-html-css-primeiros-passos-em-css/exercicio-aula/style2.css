@@ -1,0 +1,25 @@
+body{
+  font-size: 16px;
+}
+h1{
+  font-family: sans-serif;
+  font-size: 65px;
+  color: orange;
+  text-decoration: underline 2px black;
+}
+p{
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 80px;
+  text-align: center;
+}
+li{
+  background-color: yellow;
+}
+.sameColor{
+  background-color: blue;
+  color: white;
+}
+.novaCor{
+  background-color: tomato;
+}
