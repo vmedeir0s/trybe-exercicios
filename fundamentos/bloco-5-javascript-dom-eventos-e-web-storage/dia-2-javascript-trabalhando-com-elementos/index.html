@@ -57,19 +57,46 @@
   </head>
   <body>
     <script>
-      let posicaoBody = document.querySelector('body');
-      let createH1 = document.createElement('h1')
-      posicaoBody.appendChild(createH1).innerText = 'Requisito 1 Adiciona a tag <h1> com DOM';
-      let createMain = document.createElement('main');
-      createMain.className = 'main-content';
-      posicaoBody.appendChild(createMain);
-      let posicaoMain = document.querySelector('.main-content');
-      let createSection = document.createElement('section');
-      createSection.className = 'center-content';
-      posicaoMain.appendChild(createSection);
-      let createP = document.createElement('p');
-      createP.innerText = 'Requisito 4';
-      posicaoMain.firstChild.appendChild(createP);
+      function posicao(valor){
+        let retorno = document.querySelector(valor);
+        return retorno;
+      }
+      function criaElemento(valor){
+        let elemento = document.createElement(valor);
+        return elemento;
+      }
+      
+      posicao('body').appendChild(criaElemento('h1')).innerText = 'Requisito 1 Adiciona a tag <h1> com DOM';
+
+      posicao('body').appendChild(criaElemento('main')).className = 'main-content';
+      
+      posicao('.main-content').appendChild(criaElemento('section')).className = 'center-content';
+
+      posicao('.main-content').firstChild.appendChild(criaElemento('p')).innerText = 'Requisito 4';
+
+      posicao('.main-content').appendChild(criaElemento('section')).className = 'left-content';
+
+      posicao('.main-content').appendChild(criaElemento('section')).className = 'right-content'
+      
+      posicao('.left-content').appendChild(criaElemento('img')).className = 'small-image'
+      
+      posicao('.small-image').src = 'https://picsum.photos/200';
+
+      posicao('.right-content').appendChild(criaElemento('ul'));
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'um';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'dois';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'três';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'quatro';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'cinco';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'seis';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'sete';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'oito';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'nove';
+      posicao('.right-content ul').appendChild(criaElemento('li')).innerText = 'dez';
+      posicao('.main-content').appendChild(criaElemento('h3'));
+      posicao('.main-content').appendChild(criaElemento('h3'));
+      posicao('.main-content').appendChild(criaElemento('h3'));
+
     </script>
   </body>
 </html>
