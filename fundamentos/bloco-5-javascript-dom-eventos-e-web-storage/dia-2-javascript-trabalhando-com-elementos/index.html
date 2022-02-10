@@ -63,6 +63,13 @@
       let createMain = document.createElement('main');
       createMain.className = 'main-content';
       posicaoBody.appendChild(createMain);
+      let posicaoMain = document.querySelector('.main-content');
+      let createSection = document.createElement('section');
+      createSection.className = 'center-content';
+      posicaoMain.appendChild(createSection);
+      let createP = document.createElement('p');
+      createP.innerText = 'Requisito 4';
+      posicaoMain.firstChild.appendChild(createP);
     </script>
   </body>
 </html>
