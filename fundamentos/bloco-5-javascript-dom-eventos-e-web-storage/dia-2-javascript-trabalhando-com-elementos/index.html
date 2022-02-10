@@ -96,7 +96,16 @@
       posicao('.main-content').appendChild(criaElemento('h3'));
       posicao('.main-content').appendChild(criaElemento('h3'));
       posicao('.main-content').appendChild(criaElemento('h3'));
-
+      posicao('body h1').className = 'title';
+      let vetor = document.querySelectorAll('body h3');
+      for(let i in vetor){
+        vetor[i].className = 'description'
+      }
+      posicao('.main-content').removeChild(posicao('.left-content'));
+      posicao('.main-content .right-content').style = 'margin-right: auto'
+      posicao('.main-content .center-content').style = 'background-color: green';
+      posicao('ul').removeChild(posicao('ul').lastElementChild);
+      posicao('ul').removeChild(posicao('ul').lastElementChild);
     </script>
   </body>
 </html>
