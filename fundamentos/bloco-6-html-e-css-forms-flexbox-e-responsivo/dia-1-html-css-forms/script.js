@@ -1,18 +1,8 @@
+document.getElementById('myInputId').DatePickerX.init();
+
 let botao = document.querySelector('button[type="submit"]');
 
 let form = document.querySelector('form');
-
-// botao.addEventListener('click', function(event) {
-//   event.preventDefault();
-// });
-
-let positionForm = document.querySelector('form');
-let newBtn = document.createElement('button');
-newBtn.setAttribute('id','apagar');
-newBtn.setAttribute('type','reset');
-newBtn.innerText = 'Apagar';
-positionForm.appendChild(newBtn);
-
 
 botao.addEventListener('click', function (event) {
   let check2 = document.querySelector('#check2');
