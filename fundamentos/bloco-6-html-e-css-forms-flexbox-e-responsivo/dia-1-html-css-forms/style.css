@@ -1,4 +1,9 @@
-* {
+/* * {
   line-height: 1.2;
   margin-bottom: 12px;
 }
+
+textarea {
+  width: 80%;
+  resize: none;
+} */
