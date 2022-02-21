@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário Viagem</title>
+</head>
+<body>
+  <header>
+    <h1>Header da página</h1>
+  </header>
+  <main>
+    <form action="" method="get">
+      <label for="nome">Nome: <input type="text" id="name" minlength="10" maxlength="40" placeholder="Digite seu nome completo"></label>
+      <br>
+      <label for="email">Email: <input type="email" name="email" id="email" minlength="10" maxlength="50" placeholder="email@email.com"></label>
+      <br>
+      <label for="op1"> 
+        <input type="radio" name="local" id="op1"> Opção 1
+      </label>
+      <label for="op2">
+        <input type="radio" name="local" id="op2"> Opção 2
+      </label>
+      <label for="op3">
+        <input type="radio" name="local" id="op3"> Opção 3
+      </label>
+      <label for="op4"><input type="radio" name="local" id="op4"> Opção 4</label>
+      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+      <textarea name="text-area" id="text-area" cols="30" rows="10" maxlength="500" placeholder="Informe aqui..."></textarea>
+      <p>Qual a melhor data para realizar sua viagem?</p>
+      <label for="date">Data: <input type="date" name="date" id="date"></label>
+      <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+      <label for="check1">Concordo <input type="checkbox" name="receberCheck" id="check1"></label>
+      <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+      <label for="check2">Concordo <input type="checkbox" name="imageCheck" id="check2"></label>
+      <br>
+      <select name="tshirt" id="camisa">
+        <option value="" disabled selected>Select your option</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+
+
+      <button type="submit">Enviar</button>
+    </form>
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
