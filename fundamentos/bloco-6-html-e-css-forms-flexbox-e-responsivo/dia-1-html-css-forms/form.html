@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css">
   <title>Formulário Viagem</title>
 </head>
-<body>
   <header class="container text-center">
     <h1 class="display-1">TrybeTrip</h1>
     <p>Que tal concorrer uma viagem?</p>
@@ -57,7 +56,7 @@
       </div>
       <div class="container">
         <p>Qual a melhor data para realizar sua viagem?</p>
-        <label for="date">Data: <input type="text" name="date" id="datepicker"></label>
+        <label for="date">Data: <input type="text" name="date" id="datepicker" autocomplete="off" ></label>
       </div>
       <div class="container">
         <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
@@ -77,10 +76,9 @@
         <button class="btn btn-danger" type="reset">Limpar</button>
       </div>
     </form>
-    
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-  <script src="pikaday.js"></script>
+  <script src="/dist/just-validate.production.min.js"></script>
+  <script src="/node_modules/pikaday/pikaday.js"></script>
   <script>
     var picker = new Pikaday({ field: document.getElementById('datepicker') });
   </script>

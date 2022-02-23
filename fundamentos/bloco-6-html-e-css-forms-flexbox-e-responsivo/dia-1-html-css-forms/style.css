@@ -1,8 +1,7 @@
+@import './node_modules/pikaday/css/pikaday.css';
+
 .container {
   margin-bottom: 20px;
-}
-
-.form-floating>label {
 }
 
 .form-floating>.form-control:not(:placeholder-shown)~label {
