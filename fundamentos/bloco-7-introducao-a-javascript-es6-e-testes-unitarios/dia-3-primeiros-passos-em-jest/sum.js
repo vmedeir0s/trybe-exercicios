@@ -4,7 +4,6 @@ const sum = (value1,value2) => {
   }
   return value1 + value2;
 }
-module.exports = {sum, myRemove};
 
 function myRemove(arr, item) {
   let newArr = [];
@@ -17,3 +16,5 @@ function myRemove(arr, item) {
 }
 
 // implemente seus testes aqui
+
+module.exports = {sum, myRemove};
