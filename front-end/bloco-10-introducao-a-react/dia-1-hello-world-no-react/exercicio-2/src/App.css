@@ -1,0 +1,16 @@
+.Card {
+  margin: 10px auto;
+  width: 350px;
+  border: 2px solid #000000a3;
+  border-radius: 20px;
+  background-color: rgb(77, 39, 113);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Card:hover {
+  transform: scale(1.02);
+  background-color: rgb(86, 44, 125);
+}
