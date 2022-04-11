@@ -1,0 +1,17 @@
+fieldset {
+  width: 600px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > label {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-left: 6px;
+}
