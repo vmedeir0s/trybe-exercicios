@@ -1,0 +1,16 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "Repositorio de primeiros exercicios em Node.Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "imc": "node imc.js"
+  },
+  "author": "Vinicius de Medeiros",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "readline-sync": "^1.4.10"
+  }
+}
